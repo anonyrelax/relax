@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<html>
+    <body background="resimler/arkaplan2.png">
+
+        <center><h1 style="color:white;font-family:arial;">ÖNERİLERİNİZ</h1></center>
+        <div style="color:red;position:absolute;font-size:17px;margin-left:15px;">
+        <br>Alanlara yazı yazmak için öncelikle üstlerindeki bloklara tıklayınız 
+        <br>sonra gerekli bilgiyi giriniz !
+    </div>
+        <center><form class="form" action="https://formspree.io/acemioyuncu642@gmail.com" method="post"> <!-- your@email.com yerine kendi mail adresimizi yazıyoruz. -->
+            <div class="input-block">
+                <label for="contact_author">
+                        <br><strong class="alanisimleri">Ad Soyad</strong></label>
+                    <p><input class="ss" type="text" name="contact_author" id="contact_author" placeholder="name-username..." required></p>
+            </div>
+            <div class="input-block">
+                <label for="_replyto">
+                    <br><strong class="alanisimleri">E-Posta Adresi</strong></label>
+                    <p><input class="ss" type="email" name="_replyto" id="_replyto" placeholder="mail adress..." required></p>
+            </div>            
+            <div class="input-block">
+                <label for="contact_subject">
+                        <br> <strong class="alanisimleri">İleti Konusu</strong></label>
+                    <p><input class="ss" type="text" name="contact_subject" id="contact_subject" placeholder="konu..." required></p>
+            </div>
+            <div class="textarea-block">
+                <label for="contact_content">
+                        <br> <strong class="alanisimleri">İleti</strong></label>
+                <p><textarea name="contact_content" id="contact_content" placeholder="mesajınız..." required cols="30" rows="15"></textarea></p>
+            </div>
+            <input type="hidden" name="_next" value="https://site.io/Ana sayfa.html"> <!-- Form formspree.io adresine gönderildikten sonra tekrar sitenize dönüş yapılarak sitenizdeki thanks.html dosyasının görüntülenmesini sağlıyor. -->
+            <input class="x" type="submit" value="GÖNDER">
+        </form></center>
+        <a class="geridon" href="Ana sayfa.html">GERİYE DÖN</a>
+    </body>
+    <head>
+        <style>
+                                    .geridon {
+                padding:20px;
+                padding-left:30px;
+                position: absolute;
+                background:#e74c3c;
+                margin-left:15px;
+                margin-top:-650px;
+                width:120px;
+                font-family: arial;
+            }
+            a {
+                color:white;
+                text-decoration: none;
+            }
+            .geridon:hover {
+                background: transparent;
+                border:2px solid #e74c3c;
+                padding:20px;
+            }
+            .form {
+                margin-top:50px;
+            }
+        .x {
+            background:#e74c3c;
+            border:solid #e74c3c;
+            padding: 20px;
+            color:white;
+            width:300px;
+        } 
+        .x:hover {
+            background:transparent;
+            border:2px solid #e74c3c;
+        }   
+        .alanisimleri {
+            color:white;
+            border:2px solid #e74c3c;
+    padding:15px;
+    width:150px;
+    font-family:arial;
+        }
+        .ss {
+            padding:15px;
+        }
+
+        </style>
+                <SCRIPT language=JavaScript>
+                        document.oncontextmenu = function(){return false}
+                        if(document.layers) 
+                        {
+                            window.captureEvents(Event.MOUSEDOWN);
+                            window.onmousedown = function(e)
+                            {
+                            if(e.target==document)return false;
+                            }
+                        }
+                        else 
+                        {
+                            document.onmousedown = function(){return false}
+                        }
+                        </SCRIPT>
+    </head>
+</html>
